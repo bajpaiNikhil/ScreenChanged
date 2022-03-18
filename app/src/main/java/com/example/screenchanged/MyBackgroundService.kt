@@ -12,7 +12,7 @@ class MyBackgroundService:Service() {
             Runnable {
                 run {
                     while(true){
-                        Log.d("MyBackgroundService" , "iamstupid from background service")
+                        Log.d("MyBackgroundService" , "from background service")
                         Thread.sleep(2000)
                     }
                 }

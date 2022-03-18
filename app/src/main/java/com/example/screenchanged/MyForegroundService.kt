@@ -31,7 +31,7 @@ class MyForegroundService:Service() {
                     while(true){
                         checkFirebaseEntry()
 
-                        Log.d("MyBackgroundService" , "iamstupid from foreground service")
+                        Log.d("MyBackgroundService" , "from foreground service")
 
                         Thread.sleep(2000)
 
@@ -53,7 +53,7 @@ class MyForegroundService:Service() {
 
         getSystemService(NotificationManager::class.java).createNotificationChannel(channel)
         val notification = Notification.Builder(this ,CHANNEL_ID)
-            .setContentText("IamStupid from Service")
+            .setContentText("from Service")
             .setContentTitle("Service Enabled")
             .setSmallIcon(R.drawable.ic_launcher_background)
 
